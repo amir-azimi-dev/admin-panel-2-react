@@ -1,7 +1,10 @@
+// components
+import Sidebar from "./Components/Sidebar/Sidebar"
+
 function App() {
   return (
     <div>
-      <a href="#">sdlkfsd</a>
+      <Sidebar />
     </div>
   )
 }
