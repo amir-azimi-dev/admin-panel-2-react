@@ -1,11 +1,17 @@
+import "./App.scss"
+
 // components
 import Sidebar from "./Components/Sidebar/Sidebar"
+import Topbar from "./Components/Topbar/Topbar"
 
 function App() {
   return (
-    <div>
+    <>
       <Sidebar />
-    </div>
+      <main className="main">
+        <Topbar />
+      </main>
+    </>
   )
 }
 

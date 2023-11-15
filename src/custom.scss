@@ -29,4 +29,9 @@ body {
   background-color: var(--white-50);
   display: flex;
   direction: rtl;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100vw;
 }
