@@ -1,6 +1,9 @@
 import React from 'react'
 import "./Sidebar.scss"
 
+// spa
+import { Link } from 'react-router-dom';
+
 // icons
 import { IconContext } from 'react-icons';
 import { AiOutlineHome } from "react-icons/ai";
@@ -18,40 +21,40 @@ export default function Sidebar() {
             <IconContext.Provider value={{size: 24}}>
                 <ul className="sidebar__menu">
                     <li className='sidebar__item sidebar__item--active'>
-                        <a className='sidebar__link' href="#">
+                        <Link to="/" className='sidebar__link'>
                             <AiOutlineHome />
                             صفحه‌ی اصلی
-                        </a>
+                        </Link>
                     </li>
                     <li className='sidebar__item'>
-                        <a className='sidebar__link' href="#">
+                        <Link to="/products" className='sidebar__link'>
                             <AiOutlineShoppingCart />
                             محصولات
-                        </a>
+                        </Link>
                     </li>
                     <li className='sidebar__item'>
-                        <a className='sidebar__link' href="#">
+                        <Link to="/comments" className='sidebar__link'>
                             <AiOutlineComment />
                             کامنت‌ها
-                        </a>
+                        </Link>
                     </li>
                     <li className='sidebar__item'>
-                        <a className='sidebar__link' href="#">
+                        <Link to="/users" className='sidebar__link'>
                             <AiOutlineUser />
                             کاربران
-                        </a>
+                        </Link>
                     </li>
                     <li className='sidebar__item'>
-                        <a className='sidebar__link' href="#">
+                        <Link to="/orders" className='sidebar__link'>
                             <IoBagOutline />
                             سفارشات
-                        </a>
+                        </Link>
                     </li>
                     <li className='sidebar__item'>
-                        <a className='sidebar__link' href="#">
+                        <Link to="/offs" className='sidebar__link'>
                             <IoTicketOutline />
                             تخفیف‌ها
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </IconContext.Provider>
