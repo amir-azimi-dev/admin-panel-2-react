@@ -1,0 +1,37 @@
+.modal-parent {
+    .delete-modal {
+        width: 23rem;
+
+        .delete-modal__title {
+            font-size: 1.5rem;
+        }
+
+        .delete-modal__desc {
+            margin: 2rem 0;
+        }
+
+        .delete-modal__buttons {
+            display: flex;
+            justify-content: end;
+            column-gap: 0.4rem;
+
+            .delete-modal__btn {
+                padding: 0.2rem 1rem;
+                border-radius: 0.3rem;
+                border: none;
+                background-color: unset;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &.delete-modal-btn__accept {
+                    color: red;
+
+                    &:hover {
+                        background-color: red;
+                        color: var(--white);
+                    }
+                }
+            }
+        }
+    }
+}

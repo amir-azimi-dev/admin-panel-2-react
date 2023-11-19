@@ -1,7 +1,12 @@
 import React from 'react'
 
+// components
+import EmptyContentNotif from "../EmptyContentNotif/EmptyContentNotif"
+
 export default function Orders() {
   return (
-    <div>Orders</div>
+    <div>
+      <EmptyContentNotif message="هیچ سفارشی یافت نشد !!!" />
+    </div>
   )
 }

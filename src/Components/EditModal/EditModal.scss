@@ -1,0 +1,59 @@
+.modal-parent {
+    .edit-modal {
+        width: 18rem;
+
+        .edit-modal__form {
+
+            .edit-modal__title {
+                font-size: 1.4rem;
+            }
+
+            .edit-modal__buttons-container {
+                display: flex;
+                justify-content: end;
+                column-gap: 0.3rem;
+
+                .edit-modal__btn {
+                    padding: 0.3rem 0.8rem;
+                    border-radius: 0.4rem;
+                    border: none;
+                    cursor: pointer;
+                }
+
+                .edit-modal__cancel-btn {
+                    background-color: transparent;
+                }
+
+                .edit-modal__submit-btn {
+                    background-color: var(--blue);
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}
+
+
+// edit modal children styles
+.edit-product {
+    margin: 1rem 0;
+
+    .edit-product__form-group {
+        margin-top: 1rem;
+        padding: 0.3rem 0.6rem;
+        border-radius: 0.6rem;
+        background-color: var(--white-50);
+        display: flex;
+        align-items: center;
+        column-gap: 0.3rem;
+
+        .edit-product__input {
+            background-color: transparent;
+            border: none;
+            
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

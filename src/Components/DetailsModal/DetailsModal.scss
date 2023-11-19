@@ -1,0 +1,53 @@
+.modal-parent {
+    .details-modal {
+        width: auto;
+
+        .cms-table {
+            width: 100%;
+            margin-bottom: 1rem;
+
+            thead,
+            tbody {
+                border-bottom: 1px solid #00000056;
+            }
+
+            th,
+            td {
+                padding: 1rem 3rem;
+                text-align: right;
+                vertical-align: middle;
+                white-space: nowrap;
+
+                .products-table__btn {
+                    background-color: var(--blue);
+                    color: var(--white);
+                    border: none;
+                    padding: 0.3rem 1rem;
+                    margin-left: 0.2rem;
+                    cursor: pointer;
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+
+        .details-modal__buttons {
+            display: flex;
+            justify-content: end;
+            column-gap: 0.4rem;
+
+            .details-modal__btn {
+                padding: 0.2rem 1rem;
+                border-radius: 0.3rem;
+                border: none;
+                background-color: unset;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    background-color: var(--blue);
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}
