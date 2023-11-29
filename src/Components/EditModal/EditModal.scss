@@ -1,13 +1,14 @@
 .modal-parent {
     .edit-modal {
-        width: 18rem;
+        width: 22rem;
+        padding: 1.7rem !important;
 
         .edit-modal__form {
-
+            
             .edit-modal__title {
                 font-size: 1.4rem;
             }
-
+                      
             .edit-modal__buttons-container {
                 display: flex;
                 justify-content: end;
@@ -50,6 +51,7 @@
         .edit-product__input {
             background-color: transparent;
             border: none;
+            width: 100%;
             
             &:focus {
                 outline: none;
