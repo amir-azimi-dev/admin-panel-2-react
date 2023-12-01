@@ -114,8 +114,8 @@ export default function ProductsTable({ allProducts, setStateForReloading, toast
 
     return (
         <>
-            <div className="product-table__container">
-                <table className='products-table'>
+            <div className="cms-table__container">
+                <table className='products-table cms-table'>
                     <thead>
                         <tr>
                             <th>عکس محصول</th>
@@ -136,9 +136,9 @@ export default function ProductsTable({ allProducts, setStateForReloading, toast
                                 <td>{prettifyNumber(product.price)}</td>
                                 <td>{prettifyNumber(product.count)}</td>
                                 <td>
-                                    <button className="products-table__btn" onClick={() => onShowDetailsModal(product)}>جزئیات</button>
-                                    <button className="products-table__btn" onClick={() => onShowDeleteModal(product)}>حذف</button>
-                                    <button className="products-table__btn" onClick={() => onShowEditModal(product)}>ویرایش</button>
+                                    <button className="cms-table__btn" onClick={() => onShowDetailsModal(product)}>جزئیات</button>
+                                    <button className="cms-table__btn" onClick={() => onShowDeleteModal(product)}>حذف</button>
+                                    <button className="cms-table__btn" onClick={() => onShowEditModal(product)}>ویرایش</button>
                                 </td>
                             </tr>
                         ))}
@@ -169,7 +169,7 @@ export default function ProductsTable({ allProducts, setStateForReloading, toast
                     </tbody>
                 </table>
             </DetailsModal>}
-            {isShowDeleteModal && <DeleteModal confirmDeletion={onConfirmModalDeletion} cancelDeletion={onCancelModalDeletion} activeItem={activeProduct} />}
+            {isShowDeleteModal && <DeleteModal title="آیا از حذف مطمئن هستید؟" confirmAction={onConfirmModalDeletion} cancelAction={onCancelModalDeletion} activeItem={activeProduct} />}
             {isShowEditModal && <EditModal hideModal={onCloseEditModal} submitChanges={onSubmitEditModal}>
                 <div className="edit-product">
                     <div className="edit-product__form-group">

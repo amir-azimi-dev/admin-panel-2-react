@@ -1,35 +1,16 @@
-.product-table__container {
-    padding: 1.25rem;
-    background-color: var(--white);
-    border-radius: 1rem;
-    box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
-    
+.cms-table__container {
     .products-table {
-        width: 100%;
 
         th,
         td {
-            width: 19%;
-            padding: 1rem 2rem;
-            text-align: right;
-            vertical-align: middle;
+            width: 19% !important;
 
             &:last-child {
-                width: 24%;
+                width: 24% !important;
             }
 
             .products-table__img {
                 width: 5rem;
-            }
-
-            .products-table__btn {
-                background-color: var(--blue);
-                color: var(--white);
-                border: none;
-                padding: 0.3rem 1rem;
-                margin-left: 0.2rem;
-                cursor: pointer;
-                border-radius: 0.5rem;
             }
         }
     }
