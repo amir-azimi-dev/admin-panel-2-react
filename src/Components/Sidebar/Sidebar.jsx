@@ -2,7 +2,7 @@ import React from 'react'
 import "./Sidebar.scss"
 
 // spa
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 // icons
 import { IconContext } from 'react-icons';
@@ -18,44 +18,44 @@ export default function Sidebar() {
         <div className='sidebar'>
             <h1 className="sidebar__title">به داشبورد خود خوش آمدید.</h1>
 
-            <IconContext.Provider value={{size: 24}}>
+            <IconContext.Provider value={{ size: 24 }}>
                 <ul className="sidebar__menu">
-                    <li className='sidebar__item sidebar__item--active'>
-                        <Link to="/" className='sidebar__link'>
+                    <NavLink to="/" className={({isActive}) => (isActive ? "sidebar__item sidebar__item--active" : "sidebar__item")}>
+                        <span to="/" className='sidebar__link'>
                             <AiOutlineHome />
                             صفحه‌ی اصلی
-                        </Link>
-                    </li>
-                    <li className='sidebar__item'>
-                        <Link to="/products" className='sidebar__link'>
+                        </span>
+                    </NavLink>
+                    <NavLink to="/products" className={({isActive}) => (isActive ? "sidebar__item sidebar__item--active" : "sidebar__item")}>
+                        <span to="/products" className='sidebar__link'>
                             <AiOutlineShoppingCart />
                             محصولات
-                        </Link>
-                    </li>
-                    <li className='sidebar__item'>
-                        <Link to="/comments" className='sidebar__link'>
+                        </span>
+                    </NavLink>
+                    <NavLink to="/comments" className={({isActive}) => (isActive ? "sidebar__item sidebar__item--active" : "sidebar__item")}>
+                        <span to="/comments" className='sidebar__link'>
                             <AiOutlineComment />
                             کامنت‌ها
-                        </Link>
-                    </li>
-                    <li className='sidebar__item'>
-                        <Link to="/users" className='sidebar__link'>
+                        </span>
+                    </NavLink>
+                    <NavLink to="/users" className={({isActive}) => (isActive ? "sidebar__item sidebar__item--active" : "sidebar__item")}>
+                        <span to="/users" className='sidebar__link'>
                             <AiOutlineUser />
                             کاربران
-                        </Link>
-                    </li>
-                    <li className='sidebar__item'>
-                        <Link to="/orders" className='sidebar__link'>
+                        </span>
+                    </NavLink>
+                    <NavLink to="/orders" className={({isActive}) => (isActive ? "sidebar__item sidebar__item--active" : "sidebar__item")}>
+                        <span to="/orders" className='sidebar__link'>
                             <IoBagOutline />
                             سفارشات
-                        </Link>
-                    </li>
-                    <li className='sidebar__item'>
-                        <Link to="/offs" className='sidebar__link'>
+                        </span>
+                    </NavLink>
+                    <NavLink to="/offs" className={({isActive}) => (isActive ? "sidebar__item sidebar__item--active" : "sidebar__item")}>
+                        <span to="/offs" className='sidebar__link'>
                             <IoTicketOutline />
                             تخفیف‌ها
-                        </Link>
-                    </li>
+                        </span>
+                    </NavLink>
                 </ul>
             </IconContext.Provider>
         </div>

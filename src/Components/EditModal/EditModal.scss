@@ -1,14 +1,16 @@
 .modal-parent {
+    overflow-y: auto;
+
     .edit-modal {
         width: 22rem;
         padding: 1.7rem !important;
 
         .edit-modal__form {
-            
+
             .edit-modal__title {
                 font-size: 1.4rem;
             }
-                      
+
             .edit-modal__buttons-container {
                 display: flex;
                 justify-content: end;
@@ -52,7 +54,7 @@
             background-color: transparent;
             border: none;
             width: 100%;
-            
+
             &:focus {
                 outline: none;
             }
@@ -65,4 +67,29 @@
     height: 10rem;
     resize: vertical;
     max-height: calc(100vh - 13rem);
+}
+
+
+.edit-user {
+    margin: 1rem 0;
+
+    .edit-user__form-group {
+        margin-top: 1rem;
+        padding: 0.3rem 0.6rem;
+        border-radius: 0.6rem;
+        background-color: var(--white-50);
+        display: flex;
+        align-items: center;
+        column-gap: 0.3rem;
+
+        .edit-user__input {
+            background-color: transparent;
+            border: none;
+            width: 100%;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
 }

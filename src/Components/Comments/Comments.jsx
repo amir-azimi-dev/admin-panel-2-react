@@ -130,6 +130,7 @@ export default function Comments() {
 
   return (
     <div>
+      <h1 className="cms-title">لیست نظرات</h1>
       {allComments.length ? (
         <div className="cms-table__container">
           <table className='cms-table'>

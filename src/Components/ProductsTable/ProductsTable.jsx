@@ -114,6 +114,7 @@ export default function ProductsTable({ allProducts, setStateForReloading, toast
 
     return (
         <>
+            <h1 className='cms-title'>لیست محصولات</h1>
             <div className="cms-table__container">
                 <table className='products-table cms-table'>
                     <thead>
